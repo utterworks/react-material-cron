@@ -1,0 +1,56 @@
+{
+  "name": "@utterworks/react-material-cron",
+  "version": "1.0.0",
+  "description": "React Cron Generator",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utterworks/react-material-cron.git"
+  },
+  "author": "Kaushal Trivedi (Utterworks)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utterworks/react-material-cron/issues"
+  },
+  "homepage": "https://github.com/utterworks/react-material-cron#readme",
+  "scripts": {
+    "start": "react-scripts start",
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^10.0.0",
+    "react": "^16.8.4 || ^17.0.2",
+    "react-dom": "^16.8.4 || ^17.0.2",
+    "react-scripts": "^4.0.3",
+    "rimraf": "^3.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.12.3",
+    "react": "^16.8.4 || ^17.0.2",
+    "react-dom": "^16.8.4 || ^17.0.2"
+  },
+  "dependencies": {
+    "cronstrue": "^1.117.0",
+    "ramda": "^0.27.1"
+  }
+}
